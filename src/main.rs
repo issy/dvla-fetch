@@ -44,3 +44,8 @@ async fn main() {
     let res = client.get_vehicle("RJ06JOU".to_string()).await.unwrap();
     println!("{}", res);
 }
+
+// NOTE: Final goal for this is to have working MOT and VES clients
+// - Crawl through all the MOT data pages
+// - Fetch VES entry for each vehicle in MOT data
+// - Store all info together in database
